@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+}
+
+.container {
+	margin: 0 auto;
+}
+
+@layer components {
+	.nav-item {
+		@apply font-medium text-sm uppercase px-2 py-1 hover:text-secondary duration-200;
+	}
+	.btn {
+		@apply px-7 py-[10px] font-medium bg-primary text-white rounded text-lg hover:bg-secondary duration-200;
+	}
+	.title {
+		@apply text-black text-[30px] font-medium;
+	}
+	.subtitle {
+		@apply text-black text-lg font-medium;
+	}
+	.form-input {
+		@apply border border-slate-400 rounded px-2 py-[6px] w-full focus:outline-none;
+	}
+}
